@@ -1,0 +1,2058 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-inter: Inter;
+  
+    /* font sizes */
+    --font-size-5xl: 24px;
+    --font-size-11xl: 30px;
+    --font-size-17xl: 36px;
+    --font-size-lg: 18px;
+  
+    /* Colors */
+    --color-white: #fff;
+    --color-khaki: #faf2a1;
+    --color-black: #000;
+    --color-gray: #000501;
+    --color-lightyellow: #f6fedb;
+    --color-mediumseagreen: #06a77d;
+    --color-tomato: #f06543;
+    --color-cornflowerblue: #246eb9;
+  
+    /* border radiuses */
+    --br-7xs: 6px;
+  }
+
+*::placeholder{
+    font-size: 24px !important;
+    font-family: "Inter" !important; 
+    padding: 5px !important ;
+  }
+  
+  .button{
+    top: -60px;
+  }
+  
+  .menu__box{
+    visibility: hidden;
+  }
+  
+  .hamburger-menu{
+    visibility: hidden;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  input, select, textarea{
+    color: #000 !important;
+    font-size: 24px !important;
+  }
+  
+  textarea{
+    color: black !important;
+    font-size: 24px !important;
+    font-family: "Inter" !important;
+  }
+  
+  
+  a{
+    color: inherit;
+  }
+  
+  .v{
+    display: none !important;
+  }
+  
+  #menu-toggle{
+    display: none;
+  }
+  
+  .footerbutton-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-7xs);
+    background-color: var(--color-lightyellow);
+    width: 300px;
+    height: 40px;
+  }
+  .div48,
+  .footerbutton2 {
+    position: absolute;
+    top: 6px;
+    left: 45px;
+  }
+  .footerbutton2 {
+    top: 383px;
+    left: 362px;
+    width: 300px;
+    height: 40px;
+  }
+  .div49 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: var(--font-size-17xl);
+    font-family: var(--font-inter);
+    color: var(--color-black);
+    text-align: left;
+  }
+  .email2,
+  .text2 {
+    border: 0;
+  }
+  .text2 {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 300px;
+    height: 173px;
+    background-color: #F6FEDB;
+    border: 0px;
+    border-radius: 6px;
+  }
+  .email2 {
+    font-family: var(--font-inter);
+    font-size: var(--font-size-5xl);
+    top: 50px;
+    height: 40px;
+    background-color: #F6FEDB;
+    border-radius: 6px;
+  }
+  .contact2 {
+    left: 0;
+  }
+  .contact2,
+  .contactus2,
+  .email2,
+  .name2 {
+    position: absolute;
+    width: 300px;
+  }
+  .email2,
+  .name2 {
+    left: 0;
+  }
+  .name2 {
+    border: 0;
+    background-color: #F6FEDB;
+    border-radius: 6px;
+    top: 0;
+    height: 40px;
+  }
+  .contact2 {
+    top: 61px;
+    height: 273px;
+  }
+  .contactus2 {
+    top: 37px;
+    left: 362px;
+    height: 334px;
+  }
+  .div50,
+  .div51 {
+    position: absolute;
+    top: 66px;
+    left: 0;
+  }
+  .div51 {
+    top: 115px;
+  }
+  .github-142-svgrepo-com-1-icon2,
+  .vkontakte-svgrepo-com-1-12 {
+    position: absolute;
+    top: 177px;
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+  }
+  .vkontakte-svgrepo-com-1-12 {
+    left: 0;
+  }
+  .github-142-svgrepo-com-1-icon2 {
+    left: 82px;
+  }
+  .spacecoffee4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: var(--font-size-17xl);
+  }
+  .logocontacts2 {
+    top: 37px;
+    left: 46px;
+    width: 228px;
+    height: 241px;
+  }
+  .div52,
+  .footer2,
+  .logocontacts2 {
+    position: absolute;
+  }
+  .div52 {
+    top: 581px;
+    left: 30px;
+  }
+  .footer2 {
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-khaki);
+    width: 1024px;
+    height: 646px;
+    overflow: hidden;
+    font-size: var(--font-size-5xl);
+  }
+  .image-52x-icon2,
+  .image-62x-icon2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 247px;
+    height: 220px;
+    object-fit: cover;
+  }
+  .image-62x-icon2 {
+    left: 225px;
+  }
+  .image-32x-icon2 {
+    top: 0;
+    left: 450px;
+    width: 247px;
+    object-fit: cover;
+  }
+  .image-32x-icon2,
+  .image-42x-icon2,
+  .images2 {
+    position: absolute;
+    height: 220px;
+  }
+  .image-42x-icon2 {
+    top: 0;
+    left: 675px;
+    width: 247px;
+    object-fit: cover;
+  }
+  .images2 {
+    top: 155px;
+    left: 51px;
+    width: 922px;
+    overflow: hidden;
+  }
+  .caffee2,
+  .div53 {
+    position: absolute;
+  }
+  .div53 {
+    top: 22px;
+    left: 416px;
+  }
+  .caffee2 {
+    top: 2150px;
+    left: 2px;
+    background-color: var(--color-lightyellow);
+    width: 1024px;
+    height: 500px;
+    overflow: hidden;
+  }
+  .video-icon2 {
+    top: 85px;
+    left: 218px;
+    width: 588px;
+    height: 374px;
+    object-fit: cover;
+  }
+  .brand2,
+  .div54,
+  .video-icon2 {
+    position: absolute;
+  }
+  .div54 {
+    top: 23px;
+    left: 428px;
+  }
+  .brand2 {
+    top: 1650px;
+    left: 0;
+    background-color: var(--color-khaki);
+    width: 1024px;
+    height: 500px;
+    overflow: hidden;
+  }
+  .image-22x-1-icon2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 218px;
+    height: 177px;
+    object-fit: cover;
+  }
+  .item-child3 {
+    position: absolute;
+    top: 116px;
+    left: 143px;
+    width: 100px;
+    height: 100px;
+  }
+  .div55 {
+    position: absolute;
+    top: 152px;
+    left: 167px;
+  }
+  .p30 {
+    margin: 0;
+  }
+  .item6,
+  .lavazza-blue4 {
+    position: absolute;
+  }
+  .lavazza-blue4 {
+    top: 244px;
+    left: 34px;
+    color: var(--color-white);
+  }
+  .item6 {
+    top: 86px;
+    left: 54px;
+    width: 243px;
+    height: 302px;
+    color: var(--color-black);
+  }
+  .lavazza-oro4 {
+    position: absolute;
+    top: 244px;
+    left: 48px;
+  }
+  .image-212x-1-icon2 {
+    position: absolute;
+    top: 24px;
+    left: -58px;
+    width: 359px;
+    height: 183px;
+    object-fit: cover;
+  }
+  .div56,
+  .item7 {
+    position: absolute;
+  }
+  .div56 {
+    top: 152px;
+    left: 167px;
+    color: var(--color-black);
+  }
+  .item7 {
+    top: 86px;
+    left: 394px;
+    width: 243px;
+    height: 302px;
+  }
+  .barista-pro-speciale-container2 {
+    position: absolute;
+    top: 244px;
+    left: 6px;
+  }
+  .image-222x-1-icon2 {
+    position: absolute;
+    top: 42px;
+    left: -58px;
+    width: 359px;
+    height: 183px;
+    object-fit: cover;
+  }
+  .div58,
+  .item8 {
+    position: absolute;
+  }
+  .item8 {
+    top: 86px;
+    left: 724px;
+    width: 243px;
+    height: 302px;
+  }
+  .div58 {
+    top: 24px;
+    left: 439px;
+    font-size: var(--font-size-17xl);
+  }
+  .rectangle-button {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: var(--color-white);
+    position: absolute;
+    top: 420px;
+    left: 405px;
+    border-radius: var(--br-7xs);
+    width: 217px;
+    height: 50px;
+  }
+  .div59 {
+    position: absolute;
+    top: 14px;
+    left: 26px;
+    font-size: var(--font-size-lg);
+    font-family: var(--font-inter);
+    color: var(--color-cornflowerblue);
+    text-align: left;
+  }
+  .button-special4 {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 600px;
+    left: 404px;
+    width: 217px;
+    height: 50px;
+  }
+  .items2 {
+    position: absolute;
+    top: 1150px;
+    left: 0;
+    background-color: var(--color-cornflowerblue);
+    width: 1024px;
+    height: 500px;
+    overflow: hidden;
+    text-align: center;
+    font-size: var(--font-size-5xl);
+    color: var(--color-white);
+  }
+  .div60,
+  .div61 {
+    position: absolute;
+    top: 41.71%;
+    left: 19.92%;
+  }
+  .div61 {
+    width: 100%;
+    top: 63.84%;
+    left: 0;
+    font-size: var(--font-size-5xl);
+    font-weight: 200;
+    text-align: center;
+    display: inline-block;
+  }
+  .group-icon2 {
+    position: absolute;
+    height: 34.79%;
+    width: 54.24%;
+    top: 0;
+    right: 20.76%;
+    bottom: 65.21%;
+    left: 25%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .deliveryicon2 {
+    position: absolute;
+    top: 98.19px;
+    left: 395px;
+    width: 236px;
+    height: 320.81px;
+    text-align: left;
+    font-size: var(--font-size-11xl);
+  }
+  .vector-icon2 {
+    height: 33.51%;
+    width: 35.81%;
+    top: 0;
+    right: 32.27%;
+    bottom: 66.49%;
+    left: 31.92%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .div62,
+  .div63,
+  .vector-icon2 {
+    position: absolute;
+  }
+  .div62 {
+    width: 100%;
+    top: 63.56%;
+    left: 0;
+    font-weight: 200;
+    display: inline-block;
+  }
+  .div63 {
+    top: 41.26%;
+    left: 21.55%;
+    font-size: var(--font-size-11xl);
+    text-align: left;
+  }
+  .cafeicon2 {
+    position: absolute;
+    top: 100.67px;
+    left: 49px;
+    width: 283px;
+    height: 318.33px;
+  }
+  .shop-svgrepo-com-1-icon2 {
+    position: absolute;
+    height: 39.51%;
+    width: 45.88%;
+    top: 0;
+    right: 26.16%;
+    bottom: 60.49%;
+    left: 27.96%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .div64,
+  .div65 {
+    position: absolute;
+  }
+  .div64 {
+    width: 100%;
+    top: 64.2%;
+    left: 0;
+    font-weight: 200;
+    display: inline-block;
+  }
+  .div65 {
+    top: 41.36%;
+    left: 27.96%;
+    font-size: var(--font-size-11xl);
+    text-align: left;
+  }
+  .icons2,
+  .shopicon2 {
+    position: absolute;
+  }
+  .shopicon2 {
+    top: 98px;
+    left: 702px;
+    width: 279px;
+    height: 324px;
+  }
+  .icons2 {
+    top: 650px;
+    left: 0;
+    background-color: var(--color-tomato);
+    width: 1024px;
+    height: 500px;
+    overflow: hidden;
+    text-align: center;
+    font-size: var(--font-size-5xl);
+    color: var(--color-white);
+  }
+  .div66,
+  .latte-macciatto2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  .latte-macciatto2 {
+    top: 66px;
+    font-size: var(--font-size-11xl);
+    color: var(--color-mediumseagreen);
+  }
+  .button-special-child1 {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: var(--color-khaki);
+    position: absolute;
+    top: 130px;
+    left: 0;
+    border-radius: var(--br-7xs);
+    width: 217px;
+    height: 50px;
+  }
+  .div67 {
+    position: absolute;
+    top: 14px;
+    left: 26px;
+    font-size: var(--font-size-lg);
+    font-family: var(--font-inter);
+    color: var(--color-black);
+    text-align: left;
+  }
+  .button-special4 {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 217px;
+    height: 50px;
+  }
+  .specialaction2 {
+    position: absolute;
+    top: 133px;
+    left: 41px;
+    width: 467px;
+    height: 180px;
+  }
+  .image-12x-1-icon2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 495px;
+    height: 465px;
+    object-fit: cover;
+  }
+  .imageholder-inner {
+    position: absolute;
+    top: 307px;
+    left: 234px;
+    width: 150px;
+    height: 159px;
+  }
+  .div68,
+  .imageholder2 {
+    position: absolute;
+    top: 364px;
+    left: 271px;
+  }
+  .imageholder2 {
+    top: 17px;
+    left: 512px;
+    width: 495px;
+    height: 466px;
+  }
+  .special2 {
+    top: 150px;
+    left: 0;
+    background-color: var(--color-lightyellow);
+    width: 1024px;
+    height: 500px;
+    overflow: hidden;
+  }
+  .div70,
+  .div71,
+  .spacecoffee5,
+  .special2 {
+    position: absolute;
+  }
+  .spacecoffee5 {
+    top: 53px;
+    left: 41px;
+  }
+  .div70 {
+    top: 0;
+    left: 120px;
+  }
+  .div71 {
+    top: 0;
+    left: 260px;
+  }
+  .shopping-cart-outline-svgrepo-icon2 {
+    position: absolute;
+    top: 1px;
+    left: 356px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+  }
+  .links2 {
+    position: absolute;
+    top: 63px;
+    left: 601px;
+    width: 386px;
+    height: 31px;
+    font-size: var(--font-size-5xl);
+    color: var(--color-black);
+  }
+  .header2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-khaki);
+    width: 1024px;
+    height: 150px;
+    overflow: hidden;
+    color: var(--color-gray);
+  }
+  .desktop {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 3296px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-17xl);
+    color: var(--color-black);
+    font-family: var(--font-inter);
+  }
+  
+  @media screen and (max-width: 768px) {
+    *::placeholder{
+      font-size: 24px !important;
+      font-family: "Inter" !important; 
+      padding: 5px !important ;
+    }
+    
+    .v{
+      display: none !important;
+    }
+  
+    input, select, textarea{
+      color: #000 !important;
+      font-size: 24px !important;
+      background-color: var(--color-lightyellow);
+    }
+    
+    textarea{
+      color: black !important;
+      font-size: 24px !important;
+      font-family: "Inter" !important;
+    }
+    
+  
+    .div24 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: var(--font-size-17xl);
+      font-family: var(--font-inter);
+      color: var(--color-black);
+      text-align: left;
+    }
+    .email2,
+    .name2,
+    .text2 {
+      border: 0;
+      background-color: transparent;
+      position: absolute;
+      left: 0;
+      width: 300px;
+    }
+    .text2 {
+      top: 100px;
+      height: 173px;
+      background-color: var(--color-lightyellow);
+    }
+    .email2,
+    .name2 {
+      height: 40px;
+    }
+    .email2 {
+      font-family: var(--font-inter);
+      font-size: var(--font-size-5xl);
+      background-color: var(--color-lightyellow);
+      top: 50px;
+    }
+    .name2 {
+      top: 0;
+      background-color: var(--color-lightyellow);
+    }
+    .contact2,
+    .footerbutton-item {
+      position: absolute;
+      top: 61px;
+      left: 0;
+      width: 300px;
+      height: 273px;
+    }
+    .footerbutton-item {
+      top: 0;
+      border-radius: var(--br-7xs);
+      background-color: var(--color-lightyellow);
+      height: 40px;
+    }
+    .div25 {
+      position: absolute;
+      top: 6px;
+      left: 45px;
+      font-size: var(--font-size-5xl);
+      font-family: var(--font-inter);
+      color: var(--color-black);
+      text-align: left;
+    }
+    .contactus2,
+    .footerbutton2 {
+      position: absolute;
+      width: 300px;
+    }
+    .footerbutton2 {
+      top: 390px;
+      left: 410px;
+      height: 40px;
+    }
+    .contactus2 {
+      top: 37px;
+      left: 412px;
+      height: 334px;
+    }
+    .div26,
+    .div27 {
+      position: absolute;
+      top: 66px;
+      left: 0;
+    }
+    .div27 {
+      top: 115px;
+    }
+    .github-142-svgrepo-com-1-icon1,
+    .vkontakte-svgrepo-com-1-11 {
+      position: absolute;
+      top: 177px;
+      width: 64px;
+      height: 64px;
+      overflow: hidden;
+    }
+    .vkontakte-svgrepo-com-1-11 {
+      left: 0;
+    }
+    .github-142-svgrepo-com-1-icon1 {
+      left: 82px;
+    }
+    .spacecoffee2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: var(--font-size-17xl);
+    }
+    .logocontacts2 {
+      top: 37px;
+      left: 46px;
+      width: 228px;
+      height: 241px;
+    }
+    .div28,
+    .footer2,
+    .logocontacts2 {
+      position: absolute;
+    }
+    .div28 {
+      top: 563px;
+      left: 29px;
+      display: inline-block;
+      width: 692px;
+    }
+    .footer2 {
+      bottom: 0;
+      left: 0;
+      background-color: var(--color-khaki);
+      width: 768px;
+      height: 646px;
+      overflow: hidden;
+      font-size: var(--font-size-5xl);
+    }
+    .image-52x-icon1,
+    .image-62x-icon1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 247px;
+      height: 220px;
+      object-fit: cover;
+    }
+    .image-62x-icon1 {
+      left: 225px;
+    }
+    .image-32x-icon1 {
+      top: 0;
+      left: 450px;
+      width: 247px;
+      object-fit: cover;
+    }
+    .image-32x-icon1,
+    .image-42x-icon1,
+    .images2 {
+      position: absolute;
+      height: 220px;
+    }
+    .image-42x-icon1 {
+      top: 0;
+      left: 675px;
+      width: 1px;
+      object-fit: cover;
+    }
+    .images2 {
+      top: 155px;
+      left: 46px;
+      width: 676px;
+      overflow: hidden;
+    }
+    .caffee2,
+    .div53 {
+      position: absolute;
+    }
+    .div53 {
+      top: 22px;
+      left: 288px;
+    }
+    .caffee2 {
+      top: 2150px;
+      left: 0;
+      background-color: var(--color-lightyellow);
+      width: 768px;
+      height: 500px;
+      overflow: hidden;
+    }
+    .video-icon2 {
+      top: 85px;
+      left: 90px;
+      width: 588px;
+      height: 374px;
+      object-fit: cover;
+    }
+    .brand2,
+    .div54,
+    .video-icon2 {
+      position: absolute;
+    }
+    .div54 {
+      top: 23px;
+      left: 300px;
+    }
+    .brand2 {
+      top: 1650px;
+      left: 0;
+      background-color: var(--color-khaki);
+      width: 768px;
+      height: 500px;
+      overflow: hidden;
+    }
+    .image-22x-1-icon1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 218px;
+      height: 177px;
+      object-fit: cover;
+    }
+    .ellipse-icon {
+      position: absolute;
+      top: 116px;
+      left: 143px;
+      width: 100px;
+      height: 100px;
+    }
+    .div31 {
+      position: absolute;
+      top: 152px;
+      left: 167px;
+    }
+    .p18 {
+      margin: 0;
+    }
+    .item6,
+    .lavazza-blue4 {
+      position: absolute;
+    }
+    .lavazza-blue4 {
+      top: 244px;
+      left: 34px;
+      color: var(--color-white);
+    }
+    .item6 {
+      top: 86px;
+      left: 50px;
+      width: 162px;
+      height: 302px;
+      color: var(--color-black);
+    }
+    .lavazza-oro4 {
+      position: absolute;
+      top: 244px;
+      left: 48px;
+    }
+    .image-212x-1-icon1 {
+      position: absolute;
+      top: 24px;
+      left: -58px;
+      width: 359px;
+      height: 183px;
+      object-fit: cover;
+    }
+    .div32,
+    .item7 {
+      position: absolute;
+    }
+    .div32 {
+      top: 152px;
+      left: 167px;
+      color: var(--color-black);
+    }
+    .item7 {
+      top: 86px;
+      left: 277px;
+      width: 162px;
+      height: 302px;
+    }
+    .barista-pro-speciale-container1 {
+      position: absolute;
+      top: 244px;
+      left: 6px;
+    }
+    .image-222x-1-icon1 {
+      position: absolute;
+      top: 42px;
+      left: -58px;
+      width: 359px;
+      height: 183px;
+      object-fit: cover;
+    }
+    .div58,
+    .item8 {
+      position: absolute;
+    }
+    .item8 {
+      top: 86px;
+      left: 497px;
+      width: 162px;
+      height: 302px;
+    }
+    .div58 {
+      top: 24px;
+      left: 310px;
+      font-size: var(--font-size-17xl);
+    }
+    .rectangle-button {
+      position: absolute;
+      top: 430px;
+      left: 275px;
+      border-radius: var(--br-7xs);
+      background-color: var(--color-white);
+      width: 217px;
+      height: 50px;
+    }
+    .div35 {
+      position: absolute;
+      top: 14px;
+      left: 26px;
+      font-size: var(--font-size-lg);
+      font-family: var(--font-inter);
+      color: var(--color-cornflowerblue);
+      text-align: left;
+    }
+    .button-special4 {
+      cursor: pointer;
+      border: 0;
+      padding: 0;
+      background-color: transparent;
+      position: absolute;
+      top: 420px;
+      left: 276px;
+      width: 217px;
+      height: 50px;
+    }
+    .items2 {
+      position: absolute;
+      top: 1150px;
+      left: 0;
+      background-color: var(--color-cornflowerblue);
+      width: 768px;
+      height: 500px;
+      overflow: hidden;
+      text-align: center;
+      font-size: var(--font-size-5xl);
+      color: var(--color-white);
+    }
+    .div60,
+    .div61 {
+      position: absolute;
+      height: 11.21%;
+      width: 80.23%;
+      top: 41.12%;
+      left: 10.17%;
+      display: inline-block;
+    }
+    .div61 {
+      height: 36.14%;
+      width: 100%;
+      top: 59.81%;
+      left: 0;
+      font-size: var(--font-size-5xl);
+      font-weight: 200;
+      text-align: center;
+    }
+    .group-icon2 {
+      position: absolute;
+      height: 33.64%;
+      width: 61.02%;
+      top: 0;
+      right: 13.98%;
+      bottom: 66.36%;
+      left: 25%;
+      max-width: 100%;
+      overflow: hidden;
+      max-height: 100%;
+    }
+    .deliveryicon2 {
+      position: absolute;
+      top: 88px;
+      left: 286px;
+      width: 177px;
+      height: 321px;
+      text-align: left;
+      font-size: var(--font-size-11xl);
+    }
+    .vector-icon2 {
+      position: absolute;
+      height: 33.96%;
+      width: 50.94%;
+      top: 0;
+      right: 17.14%;
+      bottom: 66.04%;
+      left: 31.92%;
+      max-width: 100%;
+      overflow: hidden;
+      max-height: 100%;
+    }
+    .div62,
+    .div63 {
+      position: absolute;
+      display: inline-block;
+    }
+    .div62 {
+      height: 36.44%;
+      width: 100%;
+      top: 59.75%;
+      left: 7.55%;
+      font-weight: 200;
+    }
+    .div63 {
+      height: 11.32%;
+      width: 76.42%;
+      top: 41.19%;
+      left: 12.74%;
+      font-size: var(--font-size-11xl);
+      text-align: left;
+    }
+    .cafeicon2 {
+      position: absolute;
+      top: 91px;
+      left: 23px;
+      width: 212px;
+      height: 318px;
+    }
+    .shop-svgrepo-com-1-icon2 {
+      position: absolute;
+      height: 33.33%;
+      width: 51.67%;
+      top: 0;
+      right: 20.37%;
+      bottom: 66.67%;
+      left: 27.96%;
+      max-width: 100%;
+      overflow: hidden;
+      max-height: 100%;
+    }
+    .div64,
+    .div65 {
+      position: absolute;
+      display: inline-block;
+    }
+    .div64 {
+      width: 100%;
+      top: 60.49%;
+      left: 0;
+      font-weight: 200;
+    }
+    .div65 {
+      width: 59.81%;
+      top: 41.36%;
+      left: 27.75%;
+      font-size: var(--font-size-11xl);
+      text-align: left;
+    }
+    .icons2,
+    .shopicon2 {
+      position: absolute;
+    }
+    .shopicon2 {
+      top: 88px;
+      left: 514px;
+      width: 209px;
+      height: 324px;
+    }
+    .icons2 {
+      top: 650px;
+      left: 0;
+      background-color: var(--color-tomato);
+      width: 768px;
+      height: 500px;
+      overflow: hidden;
+      text-align: center;
+      font-size: var(--font-size-5xl);
+      color: var(--color-white);
+    }
+    .image-12x-1-icon2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 495px;
+      height: 465px;
+      object-fit: cover;
+    }
+    .imageholder-item {
+      position: absolute;
+      top: 307px;
+      left: 234px;
+      width: 150px;
+      height: 159px;
+    }
+    .div42,
+    .imageholder2 {
+      position: absolute;
+      top: 364px;
+      left: 271px;
+    }
+    .imageholder2 {
+      top: 17px;
+      left: 324px;
+      width: 399px;
+      height: 466px;
+    }
+    .div43,
+    .latte-macciatto2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .latte-macciatto2 {
+      top: 66px;
+      font-size: var(--font-size-11xl);
+      color: var(--color-mediumseagreen);
+    }
+    .rectangle-div {
+      top: 0;
+      left: 0;
+      border-radius: var(--br-7xs);
+      background-color: var(--color-khaki);
+      width: 217px;
+      height: 50px;
+    }
+    .button-special5,
+    .div44,
+    .rectangle-div {
+      position: absolute;
+    }
+    .div44 {
+      top: 14px;
+      left: 26px;
+    }
+    .button-special5 {
+      top: 130px;
+      left: 0;
+      width: 217px;
+      height: 50px;
+      font-size: var(--font-size-lg);
+    }
+    .special1,
+    .specialaction2 {
+      position: absolute;
+      z-index: 1000;
+    }
+    .specialaction2 {
+      top: 133px;
+      left: 41px;
+      width: 467px;
+      height: 180px;
+    }
+    .special2 {
+      top: 150px;
+      left: 0;
+      background-color: var(--color-lightyellow);
+      width: 768px;
+      height: 500px;
+      overflow: hidden;
+    }
+    .div46,
+    .div47,
+    .spacecoffee5 {
+      position: absolute;
+    }
+    .spacecoffee5 {
+      top: 53px;
+      left: 41px;
+    }
+    .div46 {
+      top: 0;
+      left: 120px;
+    }
+    .div47 {
+      top: 0;
+      left: 260px;
+    }
+    .shopping-cart-outline-svgrepo-icon1 {
+      position: absolute;
+      top: 1px;
+      left: 350px;
+      width: 30px;
+      height: 30px;
+      overflow: hidden;
+    }
+    .links2 {
+      position: absolute;
+      top: 60px;
+      left: 377px;
+      width: 386px;
+      height: 31px;
+      font-size: var(--font-size-5xl);
+      color: var(--color-black);
+    }
+    .header1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: var(--color-khaki);
+      width: 768px;
+      height: 150px;
+      overflow: hidden;
+      color: var(--color-gray);
+    }
+    .desktop {
+      position: relative;
+      background-color: var(--color-white);
+      width: 100%;
+      height: 3296px;
+      overflow: hidden;
+      text-align: left;
+      font-size: var(--font-size-17xl);
+      color: var(--color-black);
+      font-family: var(--font-inter);
+    } 
+    .menu__box{
+      visibility: hidden;
+    }
+  }
+  
+  @media screen and (max-width:767px){
+    nav{
+      position: fixed;
+      flex-direction: column;
+      top: 0px;
+      right: 0px;
+      width: 320px;
+      height: 100%;
+      margin: 0;
+      padding: 0px;
+    
+      box-shadow: 1px 0px 10px rgba(0, 0, 0, .2);
+      z-index: 1000;
+      transition-duration: 3s;
+    }
+  
+    li {
+      list-style-type: none;
+    }
+    a {
+      text-decoration: none;
+     }
+    
+   .menu-btn{
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 54px;
+      left: 270px;
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+   
+    .menu-btn > span,
+    .menu-btn > span::before,
+    .menu-btn > span::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #616161;
+      transition-duration: .25s;
+    }
+  
+    .menu-btn > span::before {
+      content: '';
+      top: -8px;
+    }
+  
+    .menu-btn > span::after {
+      content: '';
+      top: 8px;
+    } 
+  
+    #menu-toggle{
+      opacity: 0;
+    }
+   
+    #menu-toggle:checked ~ .menu-btn > span{
+      transform: rotate(45deg);
+    }
+  
+    #menu-toggle:checked ~ .menu-btn > span::before{
+      top: 0;
+      transform: rotate(0);
+    }
+  
+    #menu-toggle:checked ~ .menu-btn > span::after{
+      top: 0;
+      transform: rotate(90deg);
+    }
+  
+    #menu-toggle:checked ~ .menu__box {
+      height: 1200px;
+      background-color: var(--color-khaki);
+      visibility: visible;
+      right: 0px;
+      top: 0px;
+      left: 0px;
+      padding: 0px;
+    }
+  
+    #menu-toggle:checked ~ .menu__box li{
+      margin: 50px 20px;
+    }
+  
+    #menu-toggle:checked ~ .header2{
+      background-color: #000;
+    }
+  
+    .menu__item:hover {
+      border-bottom: solid 3px black  ;
+    }
+  }
+  
+  
+  @media screen and (max-width: 320px) {
+    .v{
+      display: block !important;
+    }
+    .div48 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: var(--font-size-17xl);
+      font-family: var(--font-inter);
+      color: var(--color-black);
+      text-align: left;
+    }
+    .email2,
+    .text2 {
+      border: 0;
+      background-color: transparent;
+    }
+    .text2 {
+      position: absolute;
+      top: 100px;
+      left: 0;
+      width: 300px;
+      height: 173px;
+    }
+    .email2 {
+      font-family: var(--font-inter);
+      font-size: var(--font-size-5xl);
+      top: 50px;
+      height: 40px;
+    }
+    .contact2,
+    .email2,
+    .footerbutton-child,
+    .name2 {
+      position: absolute;
+      left: 0;
+      width: 300px;
+    }
+    .name2 {
+      border: 0;
+      background-color: transparent;
+      top: 0;
+      height: 40px;
+    }
+    .contact2 {
+      top: 61px;
+      height: 273px;
+    }
+    .footerbutton-child {
+      top: 0;
+      border-radius: var(--br-7xs);
+      background-color: var(--color-lightyellow);
+      height: 40px;
+    }
+    .div49 {
+      position: absolute;
+      top: 6px;
+      left: 45px;
+      font-size: var(--font-size-5xl);
+      font-family: var(--font-inter);
+      color: var(--color-black);
+      text-align: left;
+    }
+    .contactus2,
+    .footerbutton {
+      position: absolute;
+      width: 300px;
+    }
+    .footerbutton {
+      top: 346px;
+      left: 0;
+      height: 40px;
+    }
+    .contactus2 {
+      top: 37px;
+      left: 412px;
+      height: 334px;
+    }
+    .div50,
+    .div51 {
+      position: absolute;
+      top: 66px;
+      left: 0;
+    }
+    .div51 {
+      top: 115px;
+    }
+    .github-142-svgrepo-com-1-icon,
+    .vkontakte-svgrepo-com-1-1 {
+      position: absolute;
+      top: 177px;
+      width: 64px;
+      height: 64px;
+      overflow: hidden;
+    }
+    .vkontakte-svgrepo-com-1-1 {
+      left: 0;
+    }
+    .github-142-svgrepo-com-1-icon {
+      left: 82px;
+    }
+    .spacecoffee {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: var(--font-size-17xl);
+    }
+    .logocontacts2 {
+      position: absolute;
+      top: 37px;
+      left: 26px;
+      width: 228px;
+      height: 241px;
+    }
+    .p {
+      margin: 0;
+    }
+    .div52,
+    .footer {
+      position: absolute;
+    }
+    .div52 {
+      top: 489px;
+      left: 19px;
+      display: inline-block;
+      width: 286px;
+      height: 157px;
+    }
+    .footer {
+      bottom: 0;
+      left: 0;
+      background-color: var(--color-khaki);
+      width: 320px;
+      height: 646px;
+      overflow: hidden;
+    }
+    .image-52x-icon2,
+    .image-62x-icon2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 153px;
+      height: 220px;
+      object-fit: cover;
+    }
+    .image-62x-icon2 {
+      left: 139px;
+    }
+    .image-32x-icon2 {
+      top: 0;
+      left: 450px;
+      width: 247px;
+      object-fit: cover;
+    }
+    .image-32x-icon2,
+    .image-42x-icon2,
+    .images2 {
+      position: absolute;
+      height: 220px;
+    }
+    .image-42x-icon {
+      top: 0;
+      left: 675px;
+      width: 1px;
+      object-fit: cover;
+    }
+    .images2 {
+      top: 155px;
+      left: 16px;
+      width: 464px;
+      overflow: hidden;
+    }
+    .caffee2,
+    .div53 {
+      position: absolute;
+    }
+    .div53 {
+      top: 22px;
+      left: 64px;
+    }
+    .caffee2{
+      top: 2154px;
+      left: 0;
+      background-color: var(--color-lightyellow);
+      width: 320px;
+      height: 496px;
+      overflow: hidden;
+      font-size: var(--font-size-17xl);
+    }
+    .video-icon2 {
+      top: 173px;
+      left: 13px;
+      width: 294px;
+      height: 167px;
+      object-fit: cover;
+    }
+    .brand2,
+    .div6,
+    .video-icon2 {
+      position: absolute;
+    }
+    .div54 {
+      top: 23px;
+      left: 75.5px;
+    }
+    .brand2 {
+      top: 1650px;
+      left: 0;
+      background-color: var(--color-khaki);
+      width: 320px;
+      height: 504px;
+      font-size: var(--font-size-17xl);
+    }
+    .image-22x-1-icon2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 218px;
+      height: 177px;
+      object-fit: cover;
+    }
+    .item-child3 {
+      position: absolute;
+      top: 116px;
+      left: 143px;
+      width: 100px;
+      height: 100px;
+    }
+    .div55 {
+      top: 152px;
+      left: 167px;
+    }
+    .div55,
+    .item6,
+    .lavazza-blue {
+      position: absolute;
+    }
+    .lavazza-blue4{
+      top: 244px;
+      left: 34px;
+      color: var(--color-white);
+    }
+    .item6 {
+      top: 0px;
+      left: 0px;
+      width: 243px;
+      height: 315px;
+      color: var(--color-black);
+    }
+    .lavazza-oro4 {
+      position: absolute;
+      top: 244px;
+      left: 48px;
+    }
+    .image-212x-1-icon {
+      position: absolute;
+      top: 24px;
+      left: -58px;
+      width: 359px;
+      height: 183px;
+      object-fit: cover;
+    }
+    .div56,
+    .item1 {
+      position: absolute;
+    }
+    .div56 {
+      top: 152px;
+      left: 167px;
+      color: var(--color-black);
+    }
+    .item6 {
+      top: 86px;
+      left: 40px;
+      width: 162px;
+      height: 302px;
+    }
+    .barista-pro-speciale-container {
+      position: absolute;
+      top: 244px;
+      left: 6px;
+    }
+    .image-222x-1-icon {
+      position: absolute;
+      top: 42px;
+      left: -58px;
+      width: 359px;
+      height: 183px;
+      object-fit: cover;
+    }
+    .div10,
+    .item2 {
+      position: absolute;
+    }
+    .item7 {
+      top: 86px;
+      left: 497px;
+      width: 162px;
+      height: 302px;
+    }
+    .div10 {
+      top: 24px;
+      left: 86px;
+      font-size: var(--font-size-17xl);
+    }
+    .button-special-child {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: var(--br-7xs);
+      background-color: var(--color-white);
+      width: 217px;
+      height: 50px;
+    }
+    .button-special,
+    .div59 {
+      position: absolute;
+    }
+    .div59 {
+      top: 14px;
+      left: 26px;
+    }
+    .button-special {
+      top: 420px;
+      left: 52px;
+      width: 217px;
+      height: 50px;
+      text-align: left;
+      font-size: var(--font-size-lg);
+      color: var(--color-cornflowerblue);
+    }
+    .items2 {
+      position: absolute;
+      top: 1150px;
+      left: 0;
+      background-color: var(--color-cornflowerblue);
+      width: 320px;
+      height: 500px;
+      overflow: hidden;
+      text-align: center;
+      color: var(--color-white);
+    }
+    .div60,
+    .div61 {
+      position: absolute;
+      height: 11.21%;
+      width: 80.23%;
+      top: 41.12%;
+      left: 10.17%;
+      display: inline-block;
+    }
+    .div61 {
+      height: 36.14%;
+      width: 100%;
+      top: 59.81%;
+      left: 0;
+      font-size: var(--font-size-5xl);
+      font-weight: 200;
+      text-align: center;
+    }
+    .group-icon {
+      position: absolute;
+      height: 33.64%;
+      width: 61.02%;
+      top: 0;
+      right: 13.98%;
+      bottom: 66.36%;
+      left: 25%;
+      max-width: 100%;
+      overflow: hidden;
+      max-height: 100%;
+    }
+    .deliveryicon {
+      position: absolute;
+      top: 88px;
+      left: 286px;
+      width: 177px;
+      height: 321px;
+      text-align: left;
+      font-size: var(--font-size-11xl);
+    }
+    .vector-icon {
+      position: absolute;
+      height: 33.96%;
+      width: 50.94%;
+      top: 0;
+      right: 17.14%;
+      bottom: 66.04%;
+      left: 31.92%;
+      max-width: 100%;
+      overflow: hidden;
+      max-height: 100%;
+    }
+    .div62,
+    .div63 {
+      position: absolute;
+      display: inline-block;
+    }
+    .div62 {
+      height: 36.44%;
+      width: 100%;
+      top: 59.75%;
+      left: 7.55%;
+      font-weight: 200;
+    }
+    .div63 {
+      height: 11.32%;
+      width: 76.42%;
+      top: 41.19%;
+      left: 22.5%;
+      font-size: var(--font-size-11xl);
+      text-align: left;
+    }
+    .cafeicon {
+      position: absolute;
+      top: 91px;
+      left: 23px;
+      width: 212px;
+      height: 318px;
+    }
+    .shop-svgrepo-com-1-icon {
+      position: absolute;
+      height: 33.33%;
+      width: 51.67%;
+      top: 0;
+      right: 20.37%;
+      bottom: 66.67%;
+      left: 27.96%;
+      max-width: 100%;
+      overflow: hidden;
+      max-height: 100%;
+    }
+    .div64,
+    .div65 {
+      position: absolute;
+      display: inline-block;
+    }
+    .div64 {
+      width: 100%;
+      top: 60.49%;
+      left: 0;
+      font-weight: 200;
+    }
+    .div65 {
+      width: 59.81%;
+      top: 41.36%;
+      left: 27.75%;
+      font-size: var(--font-size-11xl);
+      text-align: left;
+    }
+    .icons,
+    .shopicon {
+      position: absolute;
+    }
+    .shopicon {
+      top: 88px;
+      left: 514px;
+      width: 209px;
+      height: 324px;
+    }
+    .icons {
+      top: 650px;
+      left: 0;
+      background-color: var(--color-tomato);
+      width: 320px;
+      height: 500px;
+      overflow: hidden;
+      text-align: center;
+      color: var(--color-white);
+    }
+    .image-12x-1-icon {
+      position: absolute;
+      top: 0;
+      left: 74px;
+      width: 495px;
+      height: 465px;
+      object-fit: cover;
+    }
+    .imageholder-child {
+      position: absolute;
+      top: 307px;
+      left: 234px;
+      width: 150px;
+      height: 159px;
+    }
+    .div66,
+    .imageholder2 {
+      position: absolute;
+      top: 364px;
+      left: 271px;
+    }
+    .imageholder2 {
+      top: 17px;
+      left: -74px;
+      width: 305px;
+      height: 339px;
+    }
+    .div58{
+      top: 20px;
+      left: 95px;
+    }
+    .button-special-item,
+    .button-special4 {
+      position: absolute;
+      left: 0;
+      width: 217px;
+      height: 50px;
+    }
+    .button-special-item {
+      top: 0;
+      border-radius: var(--br-7xs);
+      background-color: var(--color-khaki);
+    }
+    .button-special4 {
+      top: 120px;
+    }
+    .div68 {
+      position: absolute;
+      top: 366px;
+      left: 270px;
+      font-size: var(--font-size-17xl);
+      z-index: 1000;
+    }
+    .latte-macciatto {
+      left: 0;
+      top: 66px;
+      font-size: var(--font-size-11xl);
+      color: var(--color-mediumseagreen);
+    }
+    .latte-macciatto,
+    .special,
+    .specialaction2 {
+      position: absolute;
+    }
+    .specialaction2 {
+      top: 133px;
+      left: 21px;
+      width: 467px;
+      height: 180px;
+      font-size: var(--font-size-lg);
+    }
+    .special2 {
+      top: 150px;
+      left: 0;
+      background-color: var(--color-lightyellow);
+      width: 320px;
+      height: 500px;
+      overflow: hidden;
+      font-size: var(--font-size-17xl);
+    }
+    .spacecoffee5 {
+      position: absolute;
+      top: 53px;
+      left: 21px;
+    }
+    .div69 {
+      left: 0;
+    }
+    .div69,
+    .div70,
+    .div71 {
+      position: absolute;
+      top: 0;
+    }
+    .div70 {
+      left: 120px;
+    }
+    .div71 {
+      left: 260px;
+    }
+    .shopping-cart-outline-svgrepo-icon {
+      position: absolute;
+      top: 1px;
+      left: 350px;
+      width: 30px;
+      height: 30px;
+      overflow: hidden;
+    }
+    .header2,
+    .links2 {
+      position: absolute;
+    }
+    .links2 {
+      top: 60px;
+      left: 377px;
+      width: 386px;
+      height: 31px;
+      color: var(--color-black);
+    }
+    .header {
+      top: 0;
+      left: 0;
+      background-color: var(--color-khaki);
+      width: 320px;
+      height: 150px;
+      overflow: hidden;
+      color: var(--color-gray);
+    }
+    .desktop {
+      position: relative;
+      background-color: var(--color-white);
+      width: 100%;
+      height: 3296px;
+      overflow: hidden;
+      text-align: left;
+      font-size: var(--font-size-5xl);
+      color: var(--color-black);
+      font-family: var(--font-inter);
+    } 
+    .rectangle-button{
+      top: 400px;
+      left: 60px;
+    }
+    .div66{
+      top: -40px;
+      left: 0px;
+      font-size: 36px;
+    }
+    .p30{
+      width: 200px;
+    }
+    
+  .div69, .div70, .div71, .links2 img{
+    display: none;
+  }
+  
+  }
+  
+  
+  
+  
+  
+  
