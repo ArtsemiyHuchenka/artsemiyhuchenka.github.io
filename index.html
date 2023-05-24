@@ -46,30 +46,45 @@
       </div>
       <div class="caffee2">
         <section class="photo">
-        <div class="photo__buttons">
-          <button class="button button_color" data-season="winter">Кафе</button>
-          <button class="button" data-season="spring">Магазин</button>
-        </div>
-        <div class="images2 photo__image">
-          <img
-            class="image-52x-icon2"
-            alt=""
-            src="./assets/png/image52x1@2x.png"
-          /><img
-            class="image-62x-icon2"
-            alt=""
-            src="./assets/png/image62x1@2x.png"
-          /><img
-            class="image-32x-icon2"
-            alt=""
-            src="./assets/png/image32x@2x.png"
-          /><img
-            class="image-42x-icon2"
-            alt=""
-            src="./assets/png/image42x1@2x.png"
-          />
-        </div>
-      </section>      
+          <div class="photo__buttons">
+            <button class="button button_color" data-season="winter">Кафе</button>
+            <button class="button" data-season="spring">Магазин</button>
+          </div>
+          <div class="container">
+            <div class="photo__slider">
+              <div class="slider">
+                <div class="photo__image slider_left">
+                <img src="https://pibig.info/uploads/posts/2021-06/1624474481_5-pibig_info-p-krasivie-zimnie-priroda-krasivo-foto-5.jpg" alt="image 1">
+                <img src="https://gagaru.club/uploads/posts/2023-02/1676708280_gagaru-club-p-zimnie-peizazhi-krasivie-kartini-krasivo-6.jpg" alt="image 2">
+                <img src="https://proprikol.ru/wp-content/uploads/2019/12/krasivye-kartinki-pro-zimu-62.jpg" alt="image 3" hidden>
+                <img src="https://vsegda-pomnim.com/uploads/posts/2022-04/1649128468_18-vsegda-pomnim-com-p-krasivie-peizazhi-prirodi-zima-foto-20.jpg" alt="image 4" hidden>
+                <img src="https://vsegda-pomnim.com/uploads/posts/2022-04/1648940167_67-vsegda-pomnim-com-p-krasivii-dom-v-lesu-zimoi-foto-71.jpg" alt="image 5" hidden>
+                <img src="https://w-dog.ru/wallpapers/10/0/305838966598971/sneg-utrom-zima-utro-goluboe-nebo-derevya-sneg.jpg" alt="image 6" hidden>
+              </div>
+                <div class="photo__image slider_center">
+                <img src="./assets/png/image52x1@2x.png" alt="image 1">
+                <img src="./assets/png/image62x1@2x.png" alt="image 2">
+                <img src="./assets/png/image32x@2x.png" alt="image 3" hidden>
+                <img src="./assets/png/image42x1@2x.png" alt="image 4" hidden>
+                <img src="https://vsegda-pomnim.com/uploads/posts/2022-04/1648940167_67-vsegda-pomnim-com-p-krasivii-dom-v-lesu-zimoi-foto-71.jpg" alt="image 5" hidden>
+                <img src="https://w-dog.ru/wallpapers/10/0/305838966598971/sneg-utrom-zima-utro-goluboe-nebo-derevya-sneg.jpg" alt="image 6" hidden>
+              </div>
+                <div class="photo__image slider_right">
+                <img src="https://pibig.info/uploads/posts/2021-06/1624474481_5-pibig_info-p-krasivie-zimnie-priroda-krasivo-foto-5.jpg" alt="image 1">
+                <img src="https://gagaru.club/uploads/posts/2023-02/1676708280_gagaru-club-p-zimnie-peizazhi-krasivie-kartini-krasivo-6.jpg" alt="image 2">
+                <img src="https://proprikol.ru/wp-content/uploads/2019/12/krasivye-kartinki-pro-zimu-62.jpg" alt="image 3" hidden>
+                <img src="https://vsegda-pomnim.com/uploads/posts/2022-04/1649128468_18-vsegda-pomnim-com-p-krasivie-peizazhi-prirodi-zima-foto-20.jpg" alt="image 4" hidden>
+                <img src="https://vsegda-pomnim.com/uploads/posts/2022-04/1648940167_67-vsegda-pomnim-com-p-krasivii-dom-v-lesu-zimoi-foto-71.jpg" alt="image 5" hidden>
+                <img src="https://w-dog.ru/wallpapers/10/0/305838966598971/sneg-utrom-zima-utro-goluboe-nebo-derevya-sneg.jpg" alt="image 6" hidden>
+              </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="arrows">
+          <button class="button_slider_left"><--</button>
+          <button class="button_slider_right">--></button>
+        </div> 
       <script>
         const seasons = {
   winter: [
@@ -96,12 +111,20 @@
   ],
 }
 
+const imagesLeft = Array.from(document.querySelector('.slider_left').children);
+const imagesCenter = Array.from(document.querySelector('.slider_center').children);
+const imagesRight = Array.from(document.querySelector('.slider_right').children);
+
+let season = 'winter';
+
+function redrawPhoto(arr) {
+  arr.forEach((image, index) => image.src = seasons[season][index]);
+}
 
 function changeImage (event) {
-  const season = event.target.dataset.season;
-  const seasonImages = document.querySelector('.photo__image').children;
-  Array.from(seasonImages).forEach((image, index) => image.src = seasons[season][index]);
-  // Array.from(seasonImages).forEach((image, index) => image.src = './assets/seasons/' + season + '/' + (index + 1) + '.jpg');
+  season = event.target.dataset.season;
+  redrawPhoto(imagesCenter);
+  // Array.from(imagesCenter).forEach((image, index) => image.src = './assets/seasons/' + season + '/' + (index + 1) + '.jpg');
   
   const buttons = document.querySelector('.photo__buttons').children;
   Array.from(buttons).forEach(button => {
@@ -121,12 +144,56 @@ function buttonClick (event) {
 };
 
 document.querySelector('.photo__buttons').addEventListener('click', buttonClick);
+
+//slider
+function shiftPhoto(arrow) {
+  const w = window.innerWidth >= 768 ? 2 : 1;
+  if (arrow == 'left') {
+    seasons[season] = seasons[season].slice(w).concat(seasons[season].slice(0, w));
+  } else if (arrow == 'right') {
+    seasons[season] = seasons[season].slice(-w).concat(seasons[season].slice(0, -w));
+  }
+}
+
+const slider = document.querySelector('.slider');
+
+const buttonLeft = document.querySelector('.button_slider_left');
+const buttonRight = document.querySelector('.button_slider_right');
+
+function sliderLeft() {
+  buttonLeft.removeEventListener('click', sliderRight);
+  buttonRight.removeEventListener('click', sliderLeft);
+  slider.classList.add('move_left');
+  shiftPhoto('left');
+  redrawPhoto(imagesRight);
+};
+
+function sliderRight() {
+  buttonLeft.removeEventListener('click', sliderRight);
+  buttonRight.removeEventListener('click', sliderLeft);
+  slider.classList.add('move_right');
+  shiftPhoto('right');
+  redrawPhoto(imagesLeft);
+};
+
+slider.addEventListener('animationend', () => {
+  redrawPhoto(imagesCenter);
+  slider.classList.remove('move_left');
+  slider.classList.remove('move_right');
+  buttonLeft.addEventListener('click', sliderRight);
+  buttonRight.addEventListener('click', sliderLeft);
+});
+
+
+buttonLeft.addEventListener('click', sliderRight);
+buttonRight.addEventListener('click', sliderLeft);
+
     </script>
         <div class="div53">Наше кафе</div>
       </div>
       <div class="brand2">
         <a name="brand"></a>
-        <img class="video-icon2" alt="" src="./assets/png/video1@2x.png" />
+        <iframe class="video-icon2" src="https://www.youtube.com/embed/nmI3SGawCfk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <div class="div54">О Бренде</div>
       </div>
       <div class="items2">
@@ -167,10 +234,11 @@ document.querySelector('.photo__buttons').addEventListener('click', buttonClick)
           <div class="div56">5.90</div>
         </div>
         <div class="div58">Витрина</div>
-        <button class="button-special4">
+        <a href="cart.html"><button class="button-special4">
           <button class="rectangle-button"><div class="div59">Перейти в каталог</div></button>
 
         </button>
+      </a>
       </div>
       <div class="icons2">
         <div class="deliveryicon2">
@@ -209,7 +277,7 @@ document.querySelector('.photo__buttons').addEventListener('click', buttonClick)
         <div class="specialaction2">
           <div class="div66">Попробуйте <br class="v">нашу новинку</div>
           <div class="latte-macciatto2">Latte Macciatto</div>
-            <button class="button-special-child1"><div class="div67">Перейти в каталог</div></button>
+            <a href="cart.html"><button class="button-special-child1"><div class="div67">Перейти в каталог</div></button></a>
         </div>
         <div class="imageholder2">
           <img
@@ -219,7 +287,7 @@ document.querySelector('.photo__buttons').addEventListener('click', buttonClick)
           /><img
             class="imageholder-inner"
             alt=""
-            src="./assets/png/ellipse-1.svg"
+            src="./assets/svg/ellipse-1.svg"
           />
           <div class="div68">2.90</div>
         </div>
@@ -233,9 +301,9 @@ document.querySelector('.photo__buttons').addEventListener('click', buttonClick)
           <ul class="menu__box">
             <li><a class="menu__item" href="#">SpaceCoffee</a></li>
             <li><a class="menu__item" href="#">Главная</a></li>
-            <li><a class="menu__item" href="#">Контакты</a></li>
-            <li><a class="menu__item" href="#">О нас</a></li>
-            <li><a class="menu__item" href="#"><img src="./assets/svg/shoppingcartoutlinesvgrepocom-11.svg" alt=""></a></li>
+            <li><a class="menu__item" href="#footer">Контакты</a></li>
+            <li><a class="menu__item" href="#brand">О нас</a></li>
+            <li><a class="menu__item" href="cart.html"><img src="./assets/svg/shoppingcartoutlinesvgrepocom-11.svg" alt=""></a></li>
           </ul>
         </nav>
         <div class="spacecoffee5">SpaceCoffee</div>
@@ -243,11 +311,13 @@ document.querySelector('.photo__buttons').addEventListener('click', buttonClick)
           <a href="#"><div class="div69">Главная</div></a>
           <a href="#footer"><div class="div70">Контакты</div></a>
           <a href="#brand"><div class="div71">О нас</div></a>
+          <a href="cart.html">
           <img
             class="shopping-cart-outline-svgrepo-icon2"
             alt=""
             src="./assets/svg/shoppingcartoutlinesvgrepocom-11.svg"
           />
+          </a>
         </div>
       </div>
     </div>

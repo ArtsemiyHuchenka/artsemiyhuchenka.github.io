@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap"
+    />
+  </head>
+  <body>
+<div class="desktop" id="second">
+<div class="header2">
+    <nav class="menu">
+      <input id="menu-toggle" type="checkbox">
+      <label class="menu-btn" for="menu-toggle">
+        <span></span>
+      </label>
+      <ul class="menu__box">
+        <li><a class="menu__item" href="index.html">SpaceCoffee</a></li>
+        <li><a class="menu__item" href="index.html">Главная</a></li>
+        <li><a class="menu__item" href="index.html">Контакты</a></li>
+        <li><a class="menu__item" href="index.html">О нас</a></li>
+        <li><a class="menu__item" href="cart.html"><img src="./assets/svg/shoppingcartoutlinesvgrepocom-11.svg" alt=""></a></li>
+      </ul>
+    </nav>
+    <div class="spacecoffee5">SpaceCoffee</div>
+    <div class="links2">
+      <a href="index.html"><div class="div69">Главная</div></a>
+      <a href="index.html"><div class="div70">Контакты</div></a>
+      <a href="index.html"><div class="div71">О нас</div></a>
+      <a href="cart.html">
+      <img
+        class="shopping-cart-outline-svgrepo-icon2"
+        alt=""
+        src="./assets/svg/shoppingcartoutlinesvgrepocom-11.svg"
+      />
+      </a>
+    </div>
+  </div>
+  <div class="special2">
+    <h1>Корзина</h1>
+    <form>
+      <label for="products">Выберите товар:</label>
+      <select id="products">
+        <option value="">--Выберите товар--</option>
+        <option value="LavAzza Blue" data-price="60">LavAzza Blue 1 кг</option>
+        <option value="LavAzza Oro" data-price="50">LavAzza Oro 1 кг</option>
+        <option value="Barista Pro" data-price="100">Barista Pro</option>
+      </select>
+      <label for="quantity">Количество:</label>
+      <input type="number" id="quantity" min="1" max="10">
+      <button type="button" id="add-to-cart">Добавить в корзину</button>
+    </form>
+    <ul id="cart"></ul>
+    <p id="total"></p>
+        <button onclick="finish()" class="rectangle-button"><div class="div59">Перейти в каталог</div></button>
+  </div>
+  <script>
+    // Находим элементы HTML:
+        const productsSelect = document.getElementById('products');
+        const quantityInput = document.getElementById('quantity');
+        const addToCartButton = document.getElementById('add-to-cart');
+        const cartList = document.getElementById('cart');
+        const total = document.getElementById('total');
+
+        // Объявляем объект корзины:
+        const cart = {
+        items: [],
+        
+        // Метод для добавления товара в корзину:
+        addItem(item) {
+            this.items.push(item);
+        },
+        
+        // Метод для подсчета общей стоимости товаров в корзине:
+        getTotal() {
+            return this.items.reduce((total, item) => {
+            return total + (item.price * item.quantity);
+            }, 0);
+        },
+        
+        // Метод для отображения корзины:
+        render() {
+            cartList.innerHTML = '';
+            this.items.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = `${item.quantity} x ${item.product} - ${item.price * item.quantity} руб.`;
+            cartList.appendChild(li);
+            });
+            
+            total.textContent = `Общая стоимость: ${this.getTotal()} руб.`;
+        }
+        };
+
+        // Обработчик события клика на кнопку "Добавить в корзину":
+        addToCartButton.addEventListener('click', () => {
+        const product = productsSelect.value;
+        const quantity = quantityInput.value;
+        
+        if (product && quantity) {
+            const price = parseFloat(productsSelect.options[productsSelect.selectedIndex].getAttribute('data-price'));
+            
+            // Создаем объект товара и добавляем его в корзину:
+            const item = { product, quantity, price };
+            cart.addItem(item);
+            
+            // Отображаем корзину:
+            cart.render();
+            
+            // Очищаем поля выбора товара и ввода количества:
+            productsSelect.value = '';
+            quantityInput.value = '';
+        }
+        });
+        function finish(){
+            alert('Заказ успешно оформлен!');
+            location.reload();
+        }
+  </script>
+</div>
+  </body>
+</html>
